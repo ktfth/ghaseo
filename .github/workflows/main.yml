@@ -30,7 +30,7 @@ jobs:
       - name: install pnpm
         run: npm install --location=global pnpm
       - name: generate output css
-        run: npx tailwindcss -i .\src\index.css -o .\src\dist\output.css
+        run: npx tailwindcss -i ./src/index.css -o ./src/dist/output.css
       - name: install frontend dependencies
         run: yarn install # change this to npm or pnpm depending on which one you use
       - uses: tauri-apps/tauri-action@v0
